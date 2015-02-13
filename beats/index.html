@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Beats Demonstration</title>
+    <link type="text/css" rel="stylesheet"
+          href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css"/>
+     <link rel="stylesheet"
+           href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+     <link rel="stylesheet"
+           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <script type="text/javascript"
+            src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
+    <script type="text/javascript"
+            src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+     <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://www.charlie-roberts.com/gibberish/build/gibberish.js"></script>
+    <script type="text/javascript" src="../common/copyright.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  </head>
+  <body>
+    <h1>Beats Demonstration</h1>
+    <div id="buttons">
+    <button id="start" class="btn btn-success">Start
+    sound</button><button id="stop" class="btn btn-danger">Stop
+      sound</button>
+    </div>
+    <p>Current frequencies are 440Hz and <span id="secondFreq"></span>Hz.
+    Adjust second frequency with slider.</p> <p>Manipulate axes with
+      controls at lower right of graph.</p>
+    <p>To hear beats, choose a frequency close to 440Hz.  If
+    frequencies \(f_1\) and \(f_2\) are close, playing them
+    simultaneously will sound like a note with frequency \(\frac{f_1 +
+      f_2}{2}\) turning off and on with frequency \(\lvert f_1 - f_2\rvert\).</p>
+    <p>This is because adding sine waves with frequencies \(f_1\) and
+    \(f_2\) gives: \[{\color{blue}{\sin(f_1 2\pi t) + \sin(f_2 2\pi t)}} =
+    {\color{red}{2\cos\left(\frac{f_1 - f_2}{2}\cdot 2\pi t\right)}}\sin\left(\frac{f_1 + f_2}{2} \cdot
+    2\pi t\right)\]</p>
+    <div id="slider"></div>
+    <div id="box" class="jxgbox", style="height: 500px"></div>
+  </body>
+</html>

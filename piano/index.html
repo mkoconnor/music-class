@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tunings Demonstration</title>
+    <script type="text/javascript"
+            src="external/audiosynth/audiosynth.js">
+    </script>
+    <script type="text/javascript"
+            src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="tunings.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+     <!-- <link rel="stylesheet"
+      -       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="external/processed/index.css"/>
+
+     <script type="text/javascript" src="external/audiosynth-website/audiosynth.view.js"></script>
+
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  </head>
+  <body>
+    <h1>Tunings Demonstration</h1>
+    <p>This awesome javascript keyboard is
+    by <a href="http://www.keithwhor.com/music/">Keith William
+        Horwood</a>!  The only difference from his page is this page
+        adds different tunings.</p>
+
+    <div class="keyboard-options">
+      <form>
+        <div id="radio">
+          <input type="radio" id="radio1" name="radio" checked="checked"><label for="radio1">Piano</label>
+          <input type="radio" id="radio2" name="radio"><label for="radio2">Organ</label>
+          <input type="radio" id="radio3"
+                 name="radio"><label for="radio3">Acoustic Guitar</label>
+          <input type="radio" id="radio4"
+                 name="radio"><label for="radio4">EDM</label>
+        </div>
+      </form>
+<div class="sound-selector-to-hide">
+  Sound
+  <input id="sound"></input>
+</div>
+<div ID="keyboard" class="keyboard-holder"></div>
+<div class="keyboard-options">
+Range [C<span ID="OCTAVE_LOWER">3</span>-B<span ID="OCTAVE_UPPER">5</span>]
+<input type="button" ID="-_OCTAVE" value="-" />
+<input type="button" ID="+_OCTAVE" value="+" /><br />
+<i>(Use left/right arrows to adjust with keyboard)</i>
+</div>
+
+
+  </body>
+</html>
+   

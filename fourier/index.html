@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Harmonics Demonstration</title>
+    <link type="text/css" rel="stylesheet"
+          href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css"/>
+     <link rel="stylesheet"
+           href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+     <link rel="stylesheet"
+           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+     <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <script type="text/javascript"
+            src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
+    <script type="text/javascript"
+            src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+     <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://www.charlie-roberts.com/gibberish/build/gibberish.js"></script>
+    <script type="text/javascript" src="math.min.js"></script>
+     <script type="text/javascript" src="../common/copyright.js"></script>
+     <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Harmonics Demonstration</h1>
+    <div id="buttons">
+    <button id="start" class="btn btn-success">Start
+    sound</button><button id="stop" class="btn btn-danger">Stop
+      sound</button>
+    </div>
+    <p>Adjust the harmonics by dragging the points below, or by
+      typing an expression in the input box and pressing enter.</p>
+    <p>The input box can take normal mathematical expressions.
+    Additionally, you can enter <code>ifodd(x,y)</code>, which will
+    be <code>y</code> if <code>x</code> is odd and 0 otherwise.</p>
+    <p><code>f(n)=</code> <input id="input"> </p>
+    <div id="box" class="jxgbox" style="height:500px;"></div>
+  </body>
+</html>
