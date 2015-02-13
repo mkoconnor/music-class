@@ -33,8 +33,8 @@ $(document).ready(function () {
     $("#secondFreq").html(otherFreq);
     
     $("#slider").slider({
-        min: defaultFreq * .9,
-        max: defaultFreq * 1.1,
+        min: defaultFreq * .8,
+        max: defaultFreq * 1.2,
         value: otherFreq,
         slide: function (event,ui) {
             var val = $(this).slider("value");
