@@ -29,17 +29,32 @@
             <a href="https://github.com/mkoconnor/music-class">Fork me on GitHub</a>
         </div>
     </div>
-    <h1>Harmonics Demonstration</h1>
+<h1>Harmonics Demonstration</h1>
+<div class="page-header"><h2>What to try?</h2></div>
+<ul>
+  <li>Press the start sound button.</li>
+  <li>Try
+  entering <code>1/n</code>, <code>1/n^2</code>, <code>1/n^3</code> in
+  the input box and see how the sound changes (press enter after
+    entering each expression).</li>
+  <li>Try entering <code>ifodd(n,1/n)</code>, <code>ifodd(n,1/n^2)</code>, <code>ifodd(n,1/n^3)</code> in
+    the input box and see how the sound changes.</li>
+  <li>Try moving the red dots manually and see how the sound
+    changes.</li>
+</ul>
+<div class="page-header"><h2>More Information</h2></div>
+    <p>Adjust the harmonics by dragging the points below, or by
+      typing an expression in the input box and pressing enter.</p>
+    <p>The input box can take normal mathematical expressions.
+    Additionally, you can enter <code>ifodd(x,y)</code>, which will
+      be <code>y</code> if <code>x</code> is odd and 0 otherwise.</p>
+    <div class="page-header"><h2>Play Sounds</h2></div>
     <div id="buttons">
     <button id="start" class="btn btn-success">Start
     sound</button><button id="stop" class="btn btn-danger">Stop
       sound</button>
     </div>
-    <p>Adjust the harmonics by dragging the points below, or by
-      typing an expression in the input box and pressing enter.</p>
-    <p>The input box can take normal mathematical expressions.
-    Additionally, you can enter <code>ifodd(x,y)</code>, which will
-    be <code>y</code> if <code>x</code> is odd and 0 otherwise.</p>
+    <br>
     <p><code>f(n)=</code> <input id="input"> </p>
     <div id="box" class="jxgbox" style="height:500px;"></div>
   </body>
