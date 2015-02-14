@@ -30,7 +30,7 @@ $(document).ready(function () {
     //     sinewave.frequency = slide.Value();
     // });
 
-    $("#secondFreq").html(otherFreq);
+    $(".secondFreq").html(otherFreq);
     
     $("#slider").slider({
         min: defaultFreq * .8,
@@ -38,7 +38,7 @@ $(document).ready(function () {
         value: otherFreq,
         slide: function (event,ui) {
             var val = $(this).slider("value");
-            $("#secondFreq").html(val);
+            $(".secondFreq").html(val);
             sinewave.frequency = val;
             board.update();
         }
