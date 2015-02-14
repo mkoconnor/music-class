@@ -1,7 +1,7 @@
 // -*-javascript-*-
 
 var tunings = {
-    "Even-Tempered" : {
+    "Even Tempered" : {
         'C':  1.0000000000000000,
         'C#': 1.0594630943592953,
         'D':  1.1224620483093730,
