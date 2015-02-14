@@ -32,11 +32,17 @@
     </div>
 
     <h1>Beats Demonstration</h1>
-    <div id="buttons">
-    <button id="start" class="btn btn-success">Start
-    sound</button><button id="stop" class="btn btn-danger">Stop
-      sound</button>
-    </div>
+    <div class="page-header">
+    <h2>What to try?</h2></div>
+    <ul><li>Press the start button.  When two frequencies that are
+        very close are played together, you hear a "wah-wah" sound.</li>
+      <li>Move the slider below so the two frequencies are far apart.
+        The "wah-wah" sound disappears.</li>
+      <li>Read below for more information (or see the notes
+      on <a href="http://www.math.miami.edu/~armstrong/592sp15.html">Drew's
+          page</a>)</li>
+    </ul>
+    <div class="page-header"><h2>More Information</h2></div>
     <p>Current frequencies are 440Hz and <span id="secondFreq"></span>Hz.
     Adjust second frequency with slider.</p> <p>Manipulate axes with
       controls at lower right of graph.</p>
@@ -47,7 +53,13 @@
     <p>This is because adding sine waves with frequencies \(f_1\) and
     \(f_2\) gives: \[{\color{blue}{\sin(f_1 2\pi t) + \sin(f_2 2\pi t)}} =
     {\color{red}{2\cos\left(\frac{f_1 - f_2}{2}\cdot 2\pi t\right)}}\sin\left(\frac{f_1 + f_2}{2} \cdot
-    2\pi t\right)\]</p>
+      2\pi t\right)\]</p>
+    <div class="page-header"><h2>Play Sounds</h2></div>
+    <div id="buttons">
+    <button id="start" class="btn btn-success">Start
+    sound</button><button id="stop" class="btn btn-danger">Stop
+      sound</button>
+    </div>
     <div id="slider"></div>
     <div id="box" class="jxgbox", style="height: 500px"></div>
   </body>
