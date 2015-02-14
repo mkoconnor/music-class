@@ -21,20 +21,6 @@ $(document).ready(function () {
     var a = new AudioSynthView();
     a.draw();
     $(".sound-selector-to-hide").hide();
-    $("#radio").buttonset();
-    $("#radio1").click(function () {
-        setInstrument("piano");
-    });
-    $("#radio2").click(function () {
-        setInstrument("organ");
-    });
-    $("#radio3").click(function () {
-        setInstrument("acoustic");
-    });
-    $("#radio4").click(function () {
-        setInstrument("edm");
-    });
-
     setInstrument("piano");
 
     var tuningHtml = '<div style="margin:5px;" id="tuning-radio">';
