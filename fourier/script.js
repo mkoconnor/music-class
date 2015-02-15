@@ -10,13 +10,17 @@ $(document).ready(function () {
     var fundamental = 440;
 
     var parser = math.parser();
-    parser.set('ifodd',function (x,y) {
-        if (Math.abs(x % 2 - 1) < 0.0001) {
-            return y;
-        } else {
-            return 0;
-        }
-    });
+    var setif = function(name,condition) {
+        parser.set(name, function(x,y) {
+            if (condition(x)) {
+                return y;
+            } else {
+                return 0;
+            }
+        });
+    };
+    setif('ifodd',function(x) { return (Math.abs(x % 2 - 1) < 0.0001); });
+    setif('ifeven',function(x) { return (Math.abs(x % 2) < 0.0001); });
 
     var harmonicFunctionString = "1/n^2";
     var harmonicFunction = function (n) {
