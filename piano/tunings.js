@@ -31,19 +31,17 @@ var tunings = {
     },
     "Just Intonation" : {
         "C": 1,
+        "C#": 16/15,
         "D": 9/8,
+        "D#": 6/5,
         "E": 5/4,
         "F" : 4/3,
+        "F#": 45/32,
         "G" : 3/2,
+        "G#": 8/5,
         "A" : 5/3,
-        "B" : 15/8,
-
-        // accidentals just copied from even-tempered
-        'C#': 1.0594630943592953,
-        'D#': 1.1892071150027211,
-        'F#': 1.4142135623730950,
-        'G#': 1.5874010519681995,
-        'A#': 1.7817974362806786
+        "A#": 16/9,
+        "B" : 15/8
     },
     // From http://en.wikipedia.org/wiki/Quarter-comma_meantone
     "Quarter-Comma Meantone" : {
